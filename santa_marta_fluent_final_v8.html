@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santa Marta – Programa 5D/4N | Fluent by Transamérica</title>
+  <meta name="description" content="Viaja a Santa Marta con seguridad y calma: 5 días / 4 noches con City Tour, Tayrona por mar, Minca Café & Cacao, Taironaka o Cabo San Juan. Operadores verificados, +40 años de experiencia y Travel Advisor 24/7.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0f2747;
+      --accent:#f5c84c;
+      --accent-hover:#eab308;
+      --accent-2:#0ea47a;
+      --bg:#e6f1ef;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --ring:rgba(245,200,76,.35);
+      --shadow:0 12px 36px rgba(17,24,39,.10);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.6}
+    a{color:var(--primary); text-decoration:none}
+    img{max-width:100%; height:auto; display:block; border-radius:12px}
+    .container{width:clamp(300px, 92vw, 1160px); margin:0 auto; padding:0 20px}
+    header{position:sticky; top:0; z-index:60; background:#ffffffdd; backdrop-filter:blur(10px); border-bottom:1px solid #e5e7eb}
+    .header-inner{display:flex; align-items:center; justify-content:space-between; padding:12px 0}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,var(--primary), #214a86); display:grid; place-items:center; color:#fff; font-weight:800}
+    .brand h1{font-family:"Playfair Display",serif; font-size:18px; margin:0; line-height:1.1}
+    nav ul{display:flex; gap:18px; list-style:none; padding:0; margin:0}
+    nav a{font-weight:600; color:var(--text); font-size:15px}
+    .btn{border:none; padding:12px 16px; border-radius:12px; font-weight:700; cursor:pointer; transition:.25s transform,.25s box-shadow,.25s background}
+    .btn:hover{transform:translateY(-1px); box-shadow:0 12px 24px rgba(17,24,39,.12)}
+    .btn:focus{outline:3px solid var(--ring)}
+    .btn-primary{background:var(--accent); color:#111827; animation:pulse 6s infinite}
+    .btn-primary:hover{background:var(--accent-hover)}
+    .btn-outline{background:#fff; color:var(--primary); border:1px solid #d1d5db}
+    .btn-wa{background:var(--accent-2); color:white}
+    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(245,200,76,.55)}70%{box-shadow:0 0 0 12px rgba(245,200,76,0)}100%{box-shadow:0 0 0 0 rgba(245,200,76,0)}}
+    .burger{display:none; width:40px; height:40px; border-radius:10px; border:1px solid #e5e7eb; background:#fff; align-items:center; justify-content:center}
+    .burger span{width:20px; height:2px; background:#111827; position:relative; display:block}
+    .burger span::before,.burger span::after{content:""; position:absolute; left:0; width:20px; height:2px; background:#111827}
+    .burger span::before{top:-6px}.burger span::after{top:6px}
+    .mobile-nav{display:none; position:absolute; top:64px; left:0; right:0; background:#fff; border-bottom:1px solid #e5e7eb}
+    .mobile-nav a{display:block; padding:12px 20px; border-top:1px solid #f3f4f6; font-weight:600; color:#111827}
+    .hero{position:relative; min-height:72vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; overflow:hidden}
+    .hero .bg{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0}
+    .hero::before{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.35)); z-index:1}
+    .hero .content{position:relative; z-index:2; padding:32px 18px; max-width:980px}
+    .eyebrow{letter-spacing:.18em; text-transform:uppercase; font-weight:800; font-size:12px; color:#d1fae5; margin-bottom:10px}
+    .hero h2{font-family:"Playfair Display",serif; font-weight:800; font-size:clamp(28px,4.2vw,56px); margin:0 0 12px}
+    .hero p{font-size:clamp(15px,1.5vw,20px); color:#e5e7eb; margin:0 auto 18px}
+    .badges{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:16px 0 24px}
+    .badge{display:inline-flex; gap:8px; align-items:center; padding:8px 12px; border-radius:999px; background:#ffffff18; color:#eef2ff; border:1px solid #ffffff33; font-size:13px}
+    section{padding:56px 0}
+    .section-title{font-family:"Playfair Display",serif; font-size:32px; margin:0 0 8px; color:var(--primary)}
+    .section-sub{color:var(--muted); margin:0 0 26px}
+    .grid{display:grid; gap:18px}
+    .grid.cols-2{grid-template-columns:1.4fr 1fr}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px}
+    .pill{padding:8px 10px; border-radius:999px; background:#f3f4f6; font-weight:600; font-size:13px}
+    .itinerary .item{display:grid; grid-template-columns:120px 1fr auto; gap:18px; padding:16px; border-radius:16px; background:#fff; box-shadow:var(--shadow); align-items:start}
+    .itinerary .item + .item{margin-top:12px}
+    .itinerary .thumb img{width:120px; height:80px; object-fit:cover; border-radius:12px}
+    .itinerary h4{margin:0 0 6px; font-size:18px}
+    .meta{display:flex; gap:12px; flex-wrap:wrap; color:#4b5563; font-size:13px; margin-bottom:6px}
+    .expand-btn{border:none; background:#f3f4f6; padding:10px 12px; border-radius:10px; cursor:pointer; font-weight:700}
+    .details{display:none; padding:12px 12px 4px; color:#4b5563}
+    .item.open .details{display:block}
+    table{width:100%; border-collapse:separate; border-spacing:0 10px}
+    th,td{padding:12px 14px; text-align:left}
+    thead th{font-weight:700; color:var(--primary)}
+    tbody tr{background:#fff; box-shadow:var(--shadow)}
+    tbody td:first-child{border-radius:12px 0 0 12px}
+    tbody td:last-child{border-radius:0 12px 12px 0}
+    .price{color:var(--primary); font-weight:800}
+    .faq{border:1px solid #e5e7eb; border-radius:16px; overflow:hidden; background:#fff; box-shadow:var(--shadow)}
+    .faq details{border-top:1px solid #eef2f7}
+    .faq details:first-of-type{border-top:none}
+    .faq summary{cursor:pointer; padding:16px 20px; font-weight:700; list-style:none}
+    .faq p{padding:0 20px 16px 20px; color:#4b5563}
+    .cta-big{background:linear-gradient(135deg,#0f2747,#214a86); color:#fff; border-radius:20px; padding:26px; display:grid; grid-template-columns:2fr 1fr; gap:16px; align-items:center}
+    .testimonials{display:grid; gap:18px; grid-template-columns:repeat(3,1fr)}
+    .quote{background:#fff; border-radius:16px; padding:18px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:10px}
+    .quote .avatar{width:48px; height:48px; border-radius:50%; background:#dbeafe}
+    .quote .stars{color:#f59e0b}
+    footer{background:#0e1b30; color:#c7d2fe; margin-top:56px}
+    footer .top{padding:34px 0; display:grid; grid-template-columns:2fr 1fr 1fr; gap:24px}
+    footer a{color:#c7d2fe}
+    footer .bottom{padding:16px 0; border-top:1px solid #1f2a44; font-size:14px; color:#9aa7d9}
+    .sticky-bar{position:fixed; bottom:18px; left:0; right:0; display:flex; justify-content:center; z-index:70}
+    .sticky-inner{display:flex; gap:10px; background:#ffffffdd; backdrop-filter:blur(8px); padding:10px; border-radius:999px; box-shadow:var(--shadow); border:1px solid #e5e7eb}
+    .modal-overlay{position:fixed; inset:0; background:rgba(15,20,35,.48); backdrop-filter:blur(5px); display:none; align-items:center; justify-content:center; z-index:80}
+    .modal{background:#fff; border-radius:18px; padding:22px; width:min(520px,92vw); box-shadow:0 20px 60px rgba(0,0,0,.25); transform:scale(.98); opacity:0; transition:.2s ease}
+    .modal-header{display:flex; justify-content:space-between; align-items:center; gap:12px}
+    .close-btn{border:none;background:#f3f4f6;border-radius:10px;padding:6px 10px;cursor:pointer;font-weight:700}
+    .modal-overlay.open{display:flex}
+    .modal-overlay.open .modal{opacity:1; transform:scale(1)}
+    .thanks{background:#0f2747; color:#fff}
+    .thanks .close-btn{background:#183a6a; color:#fff}
+    @media (max-width: 980px){
+      nav ul{display:none}
+      .burger{display:flex}
+      .grid.cols-2,.grid.cols-3{grid-template-columns:1fr}
+      .cta-big{grid-template-columns:1fr}
+      .itinerary .item{grid-template-columns:1fr}
+      .itinerary .thumb img{width:100%; height:180px}
+      .section-title{font-size:28px}
+      .brand h1{font-size:16px}
+      .testimonials{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<header aria-label="Menú principal">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="logo">F</div>
+      <div>
+        <h1 style="margin:0">Fluent by Transamérica</h1>
+        <small style="color:var(--muted)">Experiencias Sensational</small>
+      </div>
+    </div>
+    <nav aria-label="Navegación">
+      <ul>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#itinerario">Itinerario</a></li>
+        <li><a href="#excursiones">Excursiones</a></li>
+        <li><a href="#seguridad">Seguridad</a></li>
+        <li><a href="#temporadas">Temporadas & Precios</a></li>
+        <li><a href="#festivales">Ferias & Fiestas</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contacto" class="btn btn-primary" id="openReserveTopMini">Reservar</a></li>
+      </ul>
+    </nav>
+    <button class="burger" aria-label="Abrir menú" id="burger"><span></span></button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#experiencia">Experiencia</a>
+    <a href="#itinerario">Itinerario</a>
+    <a href="#excursiones">Excursiones</a>
+    <a href="#seguridad">Seguridad</a>
+    <a href="#temporadas">Temporadas & Precios</a>
+    <a href="#festivales">Ferias & Fiestas</a>
+    <a href="#faq">FAQs</a>
+    <a href="#contacto">Reserva</a>
+  </div>
+</header>
+
+<section class="hero" role="banner" id="hero">
+  <img class="bg" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop" alt="Playa de Santa Marta y Sierra Nevada" onerror="this.style.display='none';document.getElementById('hero').style.background='linear-gradient(135deg,#1a4855,#1d6b6b)';">
+  <div class="content container">
+    <div class="eyebrow">Programa 5 días / 4 noches</div>
+    <h2>Santa Marta: seguridad, calma y experiencias que transforman</h2>
+    <p>Vive el Caribe colombiano con acompañamiento experto, transporte de confianza y atención 24/7.</p>
+    <div class="badges">
+      <span class="badge">+40 años en programas turísticos</span>
+      <span class="badge">Transporte de confianza</span>
+      <span class="badge">Acompañamiento permanente</span>
+      <span class="badge">Slow Tourism</span>
+    </div>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap">
+      <a class="btn btn-primary" href="#contacto" id="openReserveTop">Reserva con confianza</a>
+      <a class="btn btn-outline" href="#itinerario">Ver itinerario</a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section id="intro">
+    <div class="container card">
+      <h3 class="section-title">Por qué Santa Marta</h3>
+      <p><strong>Santa Marta</strong> es uno de los destinos turísticos más atractivos del Caribe colombiano, reconocida por su mezcla única de playas, historia y naturaleza. Es la ciudad más antigua de Colombia y puerta de entrada al <em>Parque Nacional Natural Tayrona</em> y a la <em>Sierra Nevada de Santa Marta</em>, hogar de pueblos indígenas ancestrales. Ofrece experiencias auténticas que combinan cultura, ecoturismo, aventura y descanso, ideales para viajeros internacionales que buscan conexión con la naturaleza y autenticidad caribeña.</p>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <div class="container grid cols-2">
+      <div class="card">
+        <h3 class="section-title">Nuestra promesa</h3>
+        <p>Estándares superiores de servicio, logística impecable y acompañamiento humano permanente. Slow Tourism con operadores Primera/Superior, acceso a experiencias auténticas y personalización a tu ritmo.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <span class="pill">Estándares superiores</span><span class="pill">Acompañamiento 24/7</span>
+          <span class="pill">Operadores Primera</span><span class="pill">Personalización</span><span class="pill">Conexión cultural</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="banner-safe" style="display:flex; gap:10px; align-items:flex-start; background:#ecfdf5; color:#064e3b; border:1px solid #a7f3d0; padding:14px; border-radius:12px">
+          <strong>Confianza y apoyo continuo:</strong>
+          <span>Nuestro compromiso es que viajes con <strong>tranquilidad total</strong>. Antes, durante y después, cuentas con un asesor que responde personalmente por cada detalle.</span>
+        </div>
+        <div style="height:10px"></div>
+        <div class="card" style="background:#fbfbfe; border:1px solid #e5e7ff">
+          <strong>Protocolo de seguridad y bienestar</strong>
+          <ul style="margin-top:8px">
+            <li>Transporte legal, asegurado y auditado.</li>
+            <li>Rutas diurnas y puntos de encuentro verificados.</li>
+            <li>Política de reprogramación por clima y mares de leva.</li>
+            <li>Checklist previo de salud/equipaje y contacto 24/7.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="itinerario" class="itinerary">
+    <div class="container">
+      <h3 class="section-title">Itinerario — 5 días / 4 noches</h3>
+      <p class="section-sub">City Tour (3h, AM 9:00–12:00 o PM 14:00–17:00), más 2 excursiones a elección entre Tayrona por mar (Playa Cristal VIP), Minca Café & Cacao, Taironaka + tubbing o Cabo San Juan. Opción especial: Ciudad Perdida.</p>
+
+      <div class="item card">
+        <div class="thumb"><img src="https://images.pexels.com/photos/176400/pexels-photo-176400.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Llegada a Santa Marta aeropuerto"></div>
+        <div>
+          <h4>Día 1 — Llegada y bienvenida</h4>
+          <div class="meta"><span>Traslado aeropuerto → hotel</span><span>Check‑in</span><span>Cóctel de bienvenida</span></div>
+          <div class="details">
+            <p><strong>Descripción del día:</strong> Recepción en el aeropuerto y traslado privado con operador registrado. Breve orientación de barrio, cajeros, playas cercanas y recomendaciones de seguridad.</p>
+            <p><strong>Actividades:</strong> Tarde libre para la playa o caminar el Centro Histórico. Nuestro asesor puede sugerir un restaurante local de cocina samaria.</p>
+            <p><strong>Incluye:</strong> Traslado, asistencia y check‑in.</p>
+          </div>
+        </div>
+        <div><button class="expand-btn" aria-expanded="false">Detalles</button></div>
+      </div>
+
+      <div class="item card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1611457194403-50e51323b560?q=80&w=800&auto=format&fit=crop" alt="Centro histórico Santa Marta"></div>
+        <div>
+          <h4>Día 2 — City Tour (3h)</h4>
+          <div class="meta"><span>AM 9:00–12:00</span><span>PM 14:00–17:00</span><span>Guía local</span></div>
+          <div class="details">
+            <p><strong>Descripción del día:</strong> Tour panorámico y a pie por los imperdibles del casco histórico y bahía para entender la historia de la ciudad más antigua de Colombia.</p>
+            <p><strong>Lugares:</strong> Quinta de San Pedro Alejandrino, Centro Histórico, Bahía, Mirador Taganga, Catedral, Parque de los Novios, Estatua del Pibe Valderrama.</p>
+            <p><strong>Incluye:</strong> Transporte, guía en español/inglés y entradas mencionadas.</p>
+          </div>
+        </div>
+        <div><button class="expand-btn" aria-expanded="false">Detalles</button></div>
+      </div>
+
+      <div class="item card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1602526218737-44642ade2e5f?q=80&w=800&auto=format&fit=crop" alt="Parque Tayrona por mar Playa Cristal"></div>
+        <div>
+          <h4>Día 3 — Excursión a elección</h4>
+          <div class="meta"><span>Según temporada</span><span>Operadores verificados</span></div>
+          <div class="details">
+            <p><strong>Descripción del día:</strong> Salida temprana para una de las experiencias destacadas (ver opciones abajo). Briefing de seguridad y coordinación de regreso.</p>
+            <p><strong>Incluye:</strong> Transporte, entradas y guía según cada excursión.</p>
+          </div>
+        </div>
+        <div><button class="expand-btn" aria-expanded="false">Detalles</button></div>
+      </div>
+
+      <div class="item card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1520975922052-1d8f28c2f5ad?q=80&w=800&auto=format&fit=crop" alt="Minca Sierra Nevada"></div>
+        <div>
+          <h4>Día 4 — Segunda excursión</h4>
+          <div class="meta"><span>Elección distinta a Día 3</span><span>8–9h aprox.</span></div>
+          <div class="details">
+            <p><strong>Descripción del día:</strong> Selecciona otra experiencia complementaria para equilibrar naturaleza, cultura o mar.</p>
+            <p><strong>Incluye:</strong> Según la excursión elegida.</p>
+          </div>
+        </div>
+        <div><button class="expand-btn" aria-expanded="false">Detalles</button></div>
+      </div>
+
+      <div class="item card">
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop" alt="Playa Caribe descanso"></div>
+        <div>
+          <h4>Día 5 — Playa & salida</h4>
+          <div class="meta"><span>Día libre</span><span>Traslado al aeropuerto</span></div>
+          <div class="details">
+            <p><strong>Descripción del día:</strong> Mañana libre para disfrutar del mar o compras. A la hora acordada, traslado al aeropuerto.</p>
+            <p><strong>Incluye:</strong> Traslado de salida.</p>
+          </div>
+        </div>
+        <div><button class="expand-btn" aria-expanded="false">Detalles</button></div>
+      </div>
+
+      <div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap">
+        <a class="btn btn-primary" href="#contacto" id="openReserveMid">Ver disponibilidad</a>
+        <a class="btn btn-outline" href="#pdf">Descargar itinerario PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="excursiones">
+    <div class="container">
+      <h3 class="section-title">Excursiones a elección (1 por día)</h3>
+      <div class="grid cols-2">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop" alt="Playa Cristal bote VIP">
+          <h4>Tayrona por mar – Playa Cristal (VIP)</h4>
+          <p><strong>9:30–17:00 ~7h30.</strong> Lancha de lujo, chalecos certificados, cava con hielo. <em>No incluye</em> alimentación. <strong>Sujeto a clima.</strong></p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1518453982395-2818917b69cc?q=80&w=1200&auto=format&fit=crop" alt="Minca café cacao finca">
+          <h4>Minca – Tour Café & Cacao</h4>
+          <p><strong>8:40–17:00 ~8h40.</strong> Caminata ~3h, finca de café/cacao, cascada “Oído del Mundo”. Incluye transporte, almuerzo y guía EN/ES. Llevar traje de baño y calzado de caminata.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1526485797147-917ec3a320bf?q=80&w=1200&auto=format&fit=crop" alt="Taironaka tubbing Río Don Diego">
+          <h4>Taironaka + tubbing (Río Don Diego)</h4>
+          <p><strong>8:00–16:00 ~8h.</strong> Sitio arqueológico Tayrona, museo y descenso en boyas hasta el mar. Incluye transporte, entradas, tubbing y almuerzo.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1542204637-e67bc7d41e48?q=80&w=1200&auto=format&fit=crop" alt="Cabo San Juan Tayrona sendero">
+          <h4>Cabo San Juan (Parque Tayrona)</h4>
+          <p><strong>6:00–17:00 ~11h.</strong> Caminata ~2h por bosque húmedo desde Cañaveral hasta Cabo San Juan (Arrecifes, Arenilla, Piscina Natural). Incluye transporte, guía y entradas.</p>
+        </div>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <strong>Programa especial:</strong> Ciudad Perdida – Sierra Nevada (consulta requisitos, estado de senderos y disponibilidad).
+      </div>
+    </div>
+  </section>
+
+  <section id="incluye">
+    <div class="container grid cols-2">
+      <div class="card">
+        <h3 class="section-title">El programa incluye</h3>
+        <ul>
+          <li>Traslado aeropuerto – hotel – aeropuerto</li>
+          <li>4 noches de alojamiento con desayuno e impuestos</li>
+          <li>Traslados relacionados en cada excursión</li>
+          <li>Alimentación según se indique en cada actividad</li>
+          <li>City Tour en Santa Marta</li>
+          <li>Tarjeta de asistencia médica</li>
+          <li>Selección de 2 excursiones (entre las sugeridas)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="section-title">No incluye</h3>
+        <ul>
+          <li>Propinas a transportistas y guías</li>
+          <li>Alimentación no descrita</li>
+          <li>Impuestos portuarios</li>
+          <li>Servicios no especificados</li>
+        </ul>
+        <div style="margin-top:10px; background:#fff; padding:14px; border-radius:12px; box-shadow:var(--shadow)">
+          <strong>Precio desde:</strong> <span class="price">USD 1.190</span> por persona*<br>
+          <small style="color:var(--muted)">*Sujeto a temporada, inventario y categoría hotelera.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="seguridad">
+    <div class="container grid cols-2">
+      <div class="card">
+        <h3 class="section-title">Seguridad y bienestar</h3>
+        <ul>
+          <li>Transporte legal, asegurado y auditado.</li>
+          <li>Rutas seguras y horarios recomendados.</li>
+          <li>Briefing de seguridad + contacto 24/7.</li>
+          <li>Guías y cuidadores certificados.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="section-title">Seguimiento & cuidado</h3>
+        <ul>
+          <li>Protocolo estricto de seguimiento (antes, durante, después).</li>
+          <li>Cuidado pormenorizado al detalle.</li>
+          <li>Experiencias vivenciales con comunidades.</li>
+          <li>Personalización en categoría Superior/Primera.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="temporadas">
+    <div class="container">
+      <h3 class="section-title">Temporadas & precios</h3>
+      <p class="section-sub">Precios <strong>DESDE</strong> y reglas según temporada e inventario. Elementos únicos: cenas especiales y visitas no tradicionales.</p>
+      <div class="card">
+        <div style="overflow-x:auto">
+          <table aria-label="Tabla de temporadas y precios">
+            <thead><tr><th>Temporada</th><th>Meses</th><th>Desde (USD)</th><th>Reglas</th></tr></thead>
+            <tbody>
+              <tr><td>Alta</td><td>Dic–Ene, Semana Santa, Jul–Ago</td><td class="price">1.490</td><td>Inventario limitado; recargo hotelero.</td></tr>
+              <tr><td>Media</td><td>Feb–Abr, Sep</td><td class="price">1.290</td><td>Puede incluir cena especial o visita no tradicional.</td></tr>
+              <tr><td>Baja</td><td>May–Jun, Oct–Nov</td><td class="price">1.190</td><td>Early Booking y flexibilidad.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="festivales">
+    <div class="container">
+      <h3 class="section-title">Ferias & Fiestas Imperdibles</h3>
+      <p class="section-sub">Eventos que elevan la satisfacción. Planifica tu viaje para vivirlos.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1504198266285-9d8a5f7f2e02?q=80&w=1200&auto=format&fit=crop" alt="Fiesta del Mar">
+          <div style="padding-top:10px"><strong>Fiesta del Mar</strong><br><small>Finales de julio – agenda oficial</small> — <a href="#" target="_blank">Programa</a></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?q=80&w=1200&auto=format&fit=crop" alt="Festival Gastronómico">
+          <div style="padding-top:10px"><strong>Festival Gastronómico</strong><br><small>Fechas variables</small> — <a href="#" target="_blank">Programa</a></div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=1200&auto=format&fit=crop" alt="Carnavales del Caribe">
+          <div style="padding-top:10px"><strong>Carnavales del Caribe</strong><br><small>Temporada de carnaval</small> — <a href="#" target="_blank">Programa</a></div>
+        </div>
+      </div>
+      <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
+        <a class="btn btn-primary" href="#contacto" id="openReserveFest">Planear viaje con eventos</a>
+        <a class="btn btn-outline" href="#temporadas">Ver temporadas estratégicas</a>
+        <a class="btn btn-outline" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/embed?src=en.colombian%23holiday%40group.v.calendar.google.com">Calendario de fiestas y festivos (por año)</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <div class="container">
+      <h3 class="section-title">Lo que dicen nuestros viajeros</h3>
+      <div class="testimonials">
+        <div class="quote">
+          <div style="display:flex; align-items:center; gap:10px">
+            <div class="avatar"></div><strong>María & Jorge (España)</strong>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>“Nos sentimos cuidados en todo momento. La excursión a Minca fue auténtica y tranquila. Repetiremos.”</p>
+        </div>
+        <div class="quote">
+          <div style="display:flex; align-items:center; gap:10px">
+            <div class="avatar"></div><strong>Claudia (Chile)</strong>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>“El equipo estuvo pendiente de cada detalle. Transporte puntual y guías muy preparados.”</p>
+        </div>
+        <div class="quote">
+          <div style="display:flex; align-items:center; gap:10px">
+            <div class="avatar"></div><strong>Robert & Anne (USA)</strong>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p>“Se nota la experiencia de +40 años. Programa flexible y seguro, justo lo que buscábamos.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <h3 class="section-title">Preguntas frecuentes</h3>
+      <div class="faq">
+        <details open>
+          <summary>¿Cuándo cierra el Parque Tayrona?</summary>
+          <p>Generalmente 3 veces al año por conservación y prácticas culturales. Las fechas exactas cambian; confirmamos con fuentes oficiales al momento de reservar.</p>
+        </details>
+        <details>
+          <summary>¿Qué llevar para Playa Cristal / Tayrona por mar?</summary>
+          <p>Protección solar, sombrero/ropa manga larga, efectivo, documento de identidad. La operación en lancha depende del clima.</p>
+        </details>
+        <details>
+          <summary>¿Es seguro Santa Marta y alrededores?</summary>
+          <p>Aplicamos protocolo de seguridad y usamos operadores autorizados. Recomendamos precauciones básicas y rutas diurnas verificadas.</p>
+        </details>
+        <details>
+          <summary>¿El agua es potable en Minca?</summary>
+          <p>No se recomienda beber del grifo; lleva hidratación o sistema de purificación.</p>
+        </details>
+        <details>
+          <summary>¿Puedo pagar con tarjeta en las excursiones?</summary>
+          <p>En playas y naturaleza predomina el efectivo; lleva efectivo para entradas menores y artesanías.</p>
+        </details>
+        <details>
+          <summary>¿Mejor época para viajar?</summary>
+          <p>Seco: dic–abr & jul–ago. Lluvias: may–jun & sep–nov. Alta demanda implica mayor ocupación y precios.</p>
+        </details>
+        <details>
+          <summary>¿Nivel de exigencia de caminatas?</summary>
+          <p>City Tour: baja. Minca: ~3h con tramos irregulares. Cabo San Juan: ~2h por bosque húmedo. Taironaka: ~20 min suave.</p>
+        </details>
+        <details>
+          <summary>¿Vacunas o requisitos?</summary>
+          <p>Se sugiere fiebre amarilla para Tayrona (consulta con tu médico). Informaremos requisitos actualizados.</p>
+        </details>
+        <details>
+          <summary>¿Si hay mal clima y no sale la lancha?</summary>
+          <p>Reprogramamos o cambiamos por una excursión terrestre equivalente según disponibilidad.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container cta-big">
+      <div>
+        <h3 style="font-family:'Playfair Display',serif; font-size:28px; margin:0 0 8px">Reserva con confianza. Estás en buenas manos.</h3>
+        <p>Asesoría sin costo con un Travel Advisor dedicado. Definimos temporada, actividades especiales y precio final.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <button class="btn btn-primary" id="openReserveBottom">Reservar ahora</button>
+          <a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/573000000000?text=Hola%20Fluent,%20quiero%20reservar%20Santa%20Marta">WhatsApp</a>
+        </div>
+      </div>
+      <form class="card" style="background:#0f2747; color:#fff; border:1px solid #2b4371" id="contactForm">
+        <div style="display:grid; gap:10px">
+          <h4 style="margin:0 0 6px">¿Tienes preguntas?</h4>
+          <label>Nombre<input required type="text" placeholder="Tu nombre" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid #3f5686; background:#0e1f3c; color:#fff"></label>
+          <label>Email<input required type="email" placeholder="tucorreo@email.com" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid #3f5686; background:#0e1f3c; color:#fff"></label>
+          <label>País<input type="text" placeholder="Ej. España" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid #3f5686; background:#0e1f3c; color:#fff"></label>
+          <label>Tu mensaje<textarea placeholder="Cuéntanos qué necesitas…" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid #3f5686; background:#0e1f3c; color:#fff; min-height:90px"></textarea></label>
+          <button type="submit" class="btn btn-primary">Enviar consulta</button>
+          <small style="opacity:.85">Al enviar, aceptas nuestra <a href="#" style="color:#fff; text-decoration:underline">política de privacidad</a>.</small>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="sticky-bar" aria-hidden="false">
+  <div class="sticky-inner">
+    <button class="btn btn-primary" id="openReserveSticky">Reservar</button>
+    <a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/573000000000?text=Hola%20Fluent,%20quiero%20informaci%C3%B3n%20de%20Santa%20Marta">WhatsApp</a>
+    <a class="btn btn-outline" href="#festivales">Ferias & Fiestas</a>
+  </div>
+</div>
+
+<footer>
+  <div class="container top">
+    <div class="brand">
+      <div class="logo">F</div>
+      <div>
+        <h3 style="margin:0; font-family:'Playfair Display',serif; color:#fff">Fluent by Transamérica</h3>
+        <small>+40 años, Travel Advisor dedicado, transporte registrado</small>
+      </div>
+    </div>
+    <div>
+      <h4>Compañía</h4>
+      <ul style="list-style:none; padding-left:0">
+        <li><a href="#">Quiénes somos</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul style="list-style:none; padding-left:0">
+        <li><a href="mailto:ventas@transamerica-co.com">ventas@transamerica-co.com</a></li>
+        <li><a href="tel:+573000000000">+57 300 000 0000</a></li>
+        <li><a target="_blank" rel="noopener" href="https://wa.me/573000000000">WhatsApp</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container bottom">© <span id="year"></span> Transamérica. Todos los derechos reservados.</div>
+</footer>
+
+<div class="modal-overlay" id="reserveModal" aria-hidden="true" role="dialog" aria-label="Reserva tu experiencia">
+  <div class="modal" aria-modal="true">
+    <div class="modal-header">
+      <h3 style="margin:0; font-family:'Playfair Display',serif;">Reserva tu experiencia en Santa Marta</h3>
+      <button class="close-btn" id="closeReserve">✕</button>
+    </div>
+    <div style="margin-top:10px">
+      <form id="reserveForm" style="display:grid; gap:10px">
+        <label>Nombre<input required type="text" placeholder="Tu nombre" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid #d1d5db"></label>
+        <label>Email<input required type="email" placeholder="tucorreo@email.com" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid #d1d5db"></label>
+        <label>País<input type="text" placeholder="Ej. España" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid #d1d5db"></label>
+        <label>Fechas tentativas<input type="text" placeholder="Ej. Marzo 2026" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid #d1d5db"></label>
+        <label>Número de personas<input type="number" min="1" value="2" style="width:100%; padding:10px 12px; border-radius:10px; border:1px solid #d1d5db"></label>
+        <button class="btn btn-primary" type="submit">Confirmar reserva con asesor</button>
+      </form>
+      <small style="display:block; margin-top:8px; color:#6b7280">No se realizará ningún cargo. Te contactaremos para confirmar fechas, hotel y excursiones.</small>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="thanksModal" aria-hidden="true" role="alertdialog" aria-label="Mensaje de confirmación">
+  <div class="modal thanks" aria-modal="true">
+    <div class="modal-header">
+      <h3 style="margin:0; font-family:'Playfair Display',serif;">¡Gracias!</h3>
+      <button class="close-btn" id="closeThanks">✕</button>
+    </div>
+    <p style="margin-top:8px">Un asesor se pondrá en contacto contigo pronto.</p>
+    <button class="close-btn" id="closeThanks2" style="margin-top:10px">Cerrar</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const burger = document.getElementById('burger');
+  const mobileNav = document.getElementById('mobileNav');
+  burger.addEventListener('click', () => {
+    mobileNav.style.display = mobileNav.style.display === 'block' ? 'none' : 'block';
+  });
+  document.querySelectorAll('.expand-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.item');
+      item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', item.classList.contains('open'));
+      btn.textContent = item.classList.contains('open') ? 'Ocultar' : 'Detalles';
+    });
+  });
+  const reserveModal = document.getElementById('reserveModal');
+  const thanksModal = document.getElementById('thanksModal');
+  function openReserve(){ reserveModal.classList.add('open'); reserveModal.setAttribute('aria-hidden','false'); }
+  function closeReserve(){ reserveModal.classList.remove('open'); reserveModal.setAttribute('aria-hidden','true'); }
+  function openThanks(){ thanksModal.classList.add('open'); thanksModal.setAttribute('aria-hidden','false'); }
+  function closeThanks(){ thanksModal.classList.remove('open'); thanksModal.setAttribute('aria-hidden','true'); }
+  const ids = ['openReserveTop','openReserveTopMini','openReserveMid','openReserveFest','openReserveBottom','openReserveSticky'];
+  ids.forEach(id=>{ const el=document.getElementById(id); if(el){ el.addEventListener('click', (e)=>{ if(el.tagName === 'A') e.preventDefault(); openReserve(); }); } });
+  document.getElementById('closeReserve').addEventListener('click', closeReserve);
+  document.getElementById('reserveForm').addEventListener('submit', (e)=>{ e.preventDefault(); closeReserve(); openThanks(); });
+  document.getElementById('closeThanks').addEventListener('click', closeThanks);
+  document.getElementById('closeThanks2').addEventListener('click', closeThanks);
+  [reserveModal, thanksModal].forEach(overlay => overlay.addEventListener('click', (e)=>{ if(e.target === overlay){ overlay.classList.remove('open'); overlay.setAttribute('aria-hidden','true'); } }));
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"TouristTrip",
+  "name":"Santa Marta – Programa 5 días / 4 noches",
+  "description":"Experiencias auténticas con seguridad, operadores verificados y selección de excursiones en Tayrona, Minca, Taironaka o Cabo San Juan.",
+  "itinerary":[
+    "Día 1: Llegada y bienvenida",
+    "Día 2: City Tour (3h)",
+    "Día 3: Excursión a elección",
+    "Día 4: Segunda excursión",
+    "Día 5: Playa y salida"
+  ],
+  "offers":[{"@type":"Offer","price":"1190.00","priceCurrency":"USD","availability":"https://schema.org/InStock"}],
+  "provider":{"@type":"TravelAgency","name":"Fluent by Transamérica"}
+}
+</script>
+</body>
+</html>
